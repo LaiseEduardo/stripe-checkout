@@ -9,6 +9,16 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           browser: chrome
+
       - name: Generate report
         run: |
           npm run cy:report
+          mkdir public
+          cp -vr cypress/reports public/reports
+
+      - name: "Upload Report"
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-reports
+          path: public/reports/*.html
+          retention-days: 5
