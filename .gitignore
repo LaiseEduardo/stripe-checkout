@@ -1,0 +1,8 @@
+node_modules/
+.vscode/
+cypress/screenshots/
+cypress/videos/
+cypress/reports/
+cypress/cucumber-json/
+cypress/fixtures/example.json
+.DS_Store

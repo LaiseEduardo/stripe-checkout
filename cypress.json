@@ -1,0 +1,10 @@
+{
+	"testFiles": "**/*.feature",
+	"ignoreTestFiles": ["*.js", "*.ts", "*.md"],
+	"viewportWidth": 1280,
+	"viewportHeight": 720,
+	"baseUrl": "https://checkout.stripe.dev",
+	"chromeWebSecurity": false,
+	"defaultCommandTimeout": 30000,
+	"video": false
+}

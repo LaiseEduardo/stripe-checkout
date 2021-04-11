@@ -1,0 +1,13 @@
+{
+	"valid": {
+		"code": "123"
+	},
+	"invalid": {
+		"expiration": "1220",
+		"code": "1"
+	},
+	"malformed": {
+		"expiration": "aa**",
+		"code": "a7p"
+	}
+}

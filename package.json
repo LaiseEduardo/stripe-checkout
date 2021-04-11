@@ -1,0 +1,33 @@
+{
+	"name": "stripe-checkout",
+	"version": "1.0.0",
+	"description": "cypress cucumber e2e tests",
+	"scripts": {
+		"cy:run": "cypress run",
+		"cy:chrome": "cypress run --browser chrome",
+		"cy:open": "cypress open",
+		"cy:report": "node ./cypress/support/reporter.js"
+	},
+	"dependencies": {
+		"cypress-cucumber-preprocessor": "^4.0.3",
+		"@cucumber/cucumber": "^7.1.0",
+		"cypress": "^6.8.1"
+	},
+	"devDependencies": {
+		"dayjs": "^1.10.4",
+		"faker": "^5.5.3",
+		"multiple-cucumber-html-reporter": "^1.18.0"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": false,
+		"stepDefinitions": "cypress/integration/",
+		"cucumberJson": {
+			"generate": true,
+			"outputFolder": "cypress/cucumber-json",
+			"filePrefix": "",
+			"fileSuffix": ".json"
+		}
+	},
+	"author": "laise.aeduardo@gmail.com",
+	"license": "ISC"
+}
